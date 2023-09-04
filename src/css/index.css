@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #cfcccc;
+  font-family: "Karla", sans-serif;
+}
+
+.App {
+  background-color: white;
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 65px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.App .Header {
+  background: linear-gradient(90deg, #672280 0%, #A626D3 100%);
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 65px;
+  width: 550px;
+  display: flex;
+  padding: 20px 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .Header .name {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.App .Header .name img {
+  width: 40px;
+  margin-right: 10px;
+}
+.App .Header .name h3 {
+  letter-spacing: -2px;
+}
+.App .Content {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.App .Content .inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.App .Content .inputs input {
+  font-family: "Karla", sans-serif;
+  width: 47%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #D5D4D8;
+  padding-left: 11px;
+  font-size: 12px;
+}
+.App .Content button {
+  height: 40px;
+  background: linear-gradient(90deg, #672280 0%, #A626D3 100%);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 36px;
+}
+.App .Content button span {
+  font-family: "Karla", sans-serif;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+}
+.App .Content .Meme {
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.App .Content .Meme img {
+  width: 100%;
+}
+.App .Content .Meme .top-text, .App .Content .Meme .bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.App .Content .Meme .top-text {
+  top: 0;
+}
+.App .Content .Meme .bottom-text {
+  bottom: 0;
+}
