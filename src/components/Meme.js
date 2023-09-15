@@ -5,7 +5,7 @@ const Meme = ({ topText, bottomText, imgSource }) => {
     <div className="Meme">
         <h1 className="top-text">{topText}</h1>
         <h1 className="bottom-text">{bottomText}</h1>
-        <img src={imgSource} />
+        <img src={imgSource} alt="" />
     </div>
   )
 }

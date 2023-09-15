@@ -23,7 +23,7 @@ const Content = () => {
     }
 
     function handleChange(event) {
-        const { type, name, value } = event.target
+        const { name, value } = event.target
 
         setMeme(prevMeme => ({
             ...prevMeme,
